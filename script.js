@@ -22,26 +22,26 @@ const displayAllPets = (cards) => {
         const div = document.createElement('div');
         div.innerHTML = `
      
-     <div class="bg-white rounded-xl shadow-md w-72 p-4">
+     <div class="bg-white rounded-xl shadow-md p-4">
     <!-- Image -->
     <img src=${card.image}>
 
     <!-- Title -->
-    <h2 class="text-lg font-semibold mb-2">Charlie</h2>
+    <h2 class="text-lg text-start font-semibold mb-2">${card.pet_name}</h2>
 
     <!-- Info list -->
     <ul class="text-sm text-gray-600 space-y-1 mb-4">
       <li class="flex items-center gap-2">
-        <span>📛</span> Breed: Golder retriever
+        <span>📛</span> Breed: ${card.breed}
       </li>
       <li class="flex items-center gap-2">
         <span>📅</span> Birth: 2024
       </li>
       <li class="flex items-center gap-2">
-        <span>♀️</span> Gender: Female
+        <span>♀️</span> Gender: ${card.gender}
       </li>
       <li class="flex items-center gap-2">
-        <span>💲</span> Price : 199$
+        <span>💲</span> Price : ${card.price}$
       </li>
     </ul>
 
